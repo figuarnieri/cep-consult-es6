@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>CEP Correios</title>
+	<style>
+		*{margin: 0;padding: 0;box-sizing: border-box;}
+		@keyframes bodyColor {
+			0%{background-color: #eee;}
+			15%{background-color: #e99;}
+			30%{background-color: #9e9;}
+			45%{background-color: #99e;}
+			60%{background-color: #ee9;}
+			75%{background-color: #9ee;}
+			90%{background-color: #99e;}
+			100%{background-color: #eee;}
+		}
+		html{font-size: 20px;}
+		body{font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;color: #999;background-color: #eee;animation: bodyColor 10s infinite;}
+		h1{font-size: 1rem;text-align: center;}
+		label{font-size: .9rem;}
+		input{display: block;width: 100%;background-color: #fff;border: 1px solid #ccc;border-radius: 5px;font-size: .9rem;padding: 8px;margin-bottom: 10px;}
+		.wrap{max-width: 800px;background-color: #fff;border-radius: 4px;margin: 10px auto;padding: 10px 20px 10px;}
+	</style>
+</head>
+<body>
+	<div class="wrap">
+		<h1>TESTE DE CEP CORREIOS</h1>
+		<label for="Cep">CEP</label>
+		<input id="Cep" data-cep type="text" placeholder="Cep">
+		<label for="Rua">RUA</label>
+		<input id="Rua" data-rua type="text" placeholder="Rua">
+		<label for="Estado">ESTADO</label>
+		<input id="Estado" data-uf type="text" placeholder="Estado">
+		<label for="Cidade">CIDADE</label>
+		<input id="Cidade" data-cidade type="text" placeholder="Cidade">
+		<label for="Bairro">BAIRRO</label>
+		<input id="Bairro" data-bairro type="text" placeholder="Bairro">
+	</div>
+	<script src="cep-es6.js"></script>
+</body>
+</html>
